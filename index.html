@@ -2,79 +2,108 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/dark.css">
     <title>Портфолио Junior Front-End Developer Мягкий Богдан</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container">
+      <nav>
+      <div class="container container-head">
       <a class="header-email" href="mailto:myagkiybogdan@gmail.com">myagkiybogdan@gmail.com</a>
       <a class="header-phone" href="tel:+380973026552">+38097-302-65-52</a>
-      <a class="dark" href="dark.html">Dark Mode</a>
+      <a class="white-mode" href="white.html">White Mode</a>
     </div>
+    </nav>
     </header>
 
     <section class="hero-image">
       <div class="container">
       <h1 class="heading">Богдан Мягкий</h1>
       <p>Junior Front-End Developer</p>
-    </div>
-    </section>
-
+      <figure class="user-image">
+        <img src="img/photo.jpg" alt="My Photo">
+      </figure>
+       </div>
+      </section>
+  <main>
     <section class="intro">
       <div class="container">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <figure class="user-image">
-        <img src="files/photo.jpg" alt="My Photo">
-      </figure >
-           <h3>Пара слов о себе</h3>
-           <p>Меня зовут Богдан, мне 26 лет. Увлекаться информационными и компьютерными технологиями я начал с малых лет, хоть сейчас и работаю в другой отрасли. В данный момент активно изучаю IT индустрию.
-            Основными направлениями, на которые я обратил внимание стали QA и Front End. Сейчас я активно изучаю теорию тестирования и интересуюсь основами Web разработки. Данное порфолио находится в тестовом режиме постоянной доработки.
-          </p>
-          <h3>Чем могу быть полезен</h3>
-          <p>Имею базовые знания UI / Api и мобильного тестирования. Ознакомлен с теорией совместной работы с разработчиками, BA и PM. Изучал основы Agile, Kanban, Waterfall.
-           У меня есть опыт работы с HTML, CSS, Git. Активно изучаю принципы создания технической документации и сообщений об ошибках. Имеется знание теорий и процедур тестирования программного обеспечения.
-            </p>
+      <h2 class="subheading">About me</h2>
+      <div class="about-me">
+      <h3>Пара слов о себе</h3>
+        <p>Меня зовут Богдан, мне 26 лет. Увлекаться информационными и компьютерными технологиями я начал с малых лет, хоть сейчас и работаю в другой отрасли. В данный момент активно изучаю IT индустрию.
+        Основными направлениями, на которые я обратил внимание стали Front End и теория тестирования. Сейчас я активно изучаю Front-End разработку, продвинутый CSS, SASS, углубляюсь в изучение Java-Script и закрепляю это на практике.
+        Информацию для обучения в первую очередь черпаю из англоязычной технической документации. Так же прохожу онлайн курс на английском языке на платформе Udemy - The Complete 2022 Web Development Bootcamp.
+        Данное порфолио находится в тестовом режиме постоянной доработки.
+        </p>
+      <h3>Что я уже изучил</h3>
+      <ul class="knowledge-list">
+        <li>Основы роботы интернета, Web и мобильных приложений</li>
+        <li>HTML5</li>
+        <li>CSS3: Основы, Flex, Grid, BEM, Анимация</li>
+        <li>Git и GitHub</li>
+        <li>Работа с препроцессором SASS</li>
+        <li>JavaScript ES6+: основы, принципы ООП </li>
+        <li>Ознакомился с оновными библиотеками и фреймворками, постепенно изучаю React</li>
+        <li>Теория Agile, Kanban, Waterfall, теория совместной работы с разработчиками, BA, QA и PM. </li>
+        <li>Adobe Photoshop на среднем уровне</li>
+        <li>English B1 - Intermediate </li>
+      </ul>
 
-
+      <h3>Что изучаю и планирую изучить</h3>
+      <ul class="knowledge-list">
+        <li>CSS: углубленные знания Grid и адаптивной верстки</li>
+        <li>Bootstrap</li>
+        <li>Изучить React</li>
+        <li>Углубленная работа с пропроцессором SASS</li>
+        <li>Webpack</li>
+        <li>Gulp</li>
+        <li>Базы данных: SQL и NoSQL</li>
+        <li>Основы одного из языков Back-End: Node.js/Pyton/PHP - для понимания работы серверной части приложений</li>
+        <li>Figma как альтернатива Adobe Photoshop</li>
+        <li>Unit тестирование</li>
+        <li>Улучшить знания ангисйкого</li>
+      </ul>
+      </div>
 
     <div class="skills">
       <h3>Мои навыки</h3>
       <dl class="skills-list">
         <dt class="skills-html">HTML</dt>
-          <dd class="level"><div style="width: 80%">80%</div></dd>
-          <dt class="skills-css">CSS</dt>
+          <dd class="level"><div style="width: 90%">90%</div></dd>
+        <dt class="skills-css">CSS</dt>
           <dd class="level"><div style="width: 80%">80%</div></dd>
         <dt class="skills-js">JavaScript</dt>
+        <dd class="level"><div  style="width: 50%">50%</div></dd>
+        <dt class="skills-react">React</dt>
         <dd class="level"><div  style="width: 10%">10%</div></dd>
       </dl>
     </div>
     </div>
     </section>
 
-    <section class="portfolio">
-      <div class="container">
+  <section class="portfolio">
+  <div class="container">
       <h2 class="subheading">Мои работы</h2>
-<figure class="project-image">
-<img src="files/project.jpg" alt="Магазин товаров для дома">
-</figure>
-      <h3>Магазин товаров для дома</h3>
-      <p>Сайт, разработанный на основе курса htmlacademy</p>
-<a class="button" href="source/index.html">Ссылка на сайт</a>
-
-    </div>
+    <figure class="project-image">
+    <img src="img/js-basic.png" alt="JavaScript-basic">
+    </figure>
+      <h3>Basic Js</h3>
+      <p>Небольшой калькулятор вычисления стоимости комунальных услуг, сделаный для личного пользования.</p>
+      <p>Временная версия, которая дорабатывается.</p>
+    <a class="button" href="projects/js-basic/index.html">Ссылка на проект</a>
+  </div>
     </section>
-
+  </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container-footer">
       <a class="footer-email" href="mailto:myagkiybogdan@gmail.com">myagkiybogdan@gmail.com</a>
       <a class="footer-phone" href="tel:+380973026552">+38097-302-65-52</a>
-      <a href="https://github.com/MyagkiyBogdan">GitHub</a>
-      <a href="https://linkedin.com/in/bogdan-myagkiy">LinkedIN</a>
+      <a class="gitHub" href="https://github.com/MyagkiyBogdan">GitHub</a>
+      <a class="linkedIn" href="https://linkedin.com/in/bogdan-myagkiy">LinkedIN</a>
     </div>
-
     </footer>
   </body>
 </html>
