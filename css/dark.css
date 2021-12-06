@@ -137,7 +137,7 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
   flex-direction: column;
 }
 
-.hero-image::before {
+/* .hero-image::before {
   border: solid black 10px;
   position: absolute;
   content: "";
@@ -145,13 +145,15 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
   width: 800px;
   margin: 0 auto;
   height: 800px;
-  /*left: calc(40vw - 32px);*/  /* сделат рядом еще 1 блок как с фото и не парить мозги */
+  /*left: calc(40vw - 32px);
   background-image: url("../img/dark-mode/hero-image.svg");
   background-repeat: no-repeat;
-
   }
 
-.hero-image::after {
+*/
+
+
+.big-bar {
   position: absolute;
   content: "";
   height: 200px;
@@ -165,6 +167,34 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
   z-index: 1;
   order: 2;
 }
+
+.hero-image-back {
+
+  position: absolute;
+  content: "";
+  top: 24px;
+  width: 800px;
+  margin: 0 auto;
+  height: 800px;
+  right: 100px;
+  background-image: url("../img/dark-mode/hero-image.svg");
+  background-repeat: no-repeat;
+}
+
+/*.hero-image::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  background-color: #0d0e2b;
+  background-image: url("../img/dark-mode/bg-tags.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 2px solid #5053a8;
+  z-index: 1;
+  order: 2;
+} */
 
   .heading {
     z-index: 1;
