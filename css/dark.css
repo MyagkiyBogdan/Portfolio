@@ -3,8 +3,7 @@ html{
 }
 
 body {
-  margin: 0;
-  min-width: 1408px;
+  margin: 0 auto;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -20,24 +19,19 @@ body {
 /* header and footer settings: email, phope, linkedIn, gitHub links and mode change */
 
 .container {
-  max-width: 1408px;
+  max-width: 1454px;
   margin: 0 auto;
-  padding: 0 16px 0 0;
+  padding: 0 30px;
   }
 
   .container-head {
     display: flex;
     justify-content: end;
-    max-width: 1408px;
-    margin: auto;
   }
 
   .container-footer {
     display: flex;
     justify-content: space-between;
-    max-width: 1408px;
-    margin: auto;
-
   }
 
 .page-header {
@@ -135,7 +129,7 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 48px;
-}
+  }
 
 
 .hero-image .container {
@@ -144,15 +138,18 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 }
 
 .hero-image::before {
+  border: solid black 10px;
   position: absolute;
   content: "";
   top: 24px;
-  left: calc(50vw - 32px);
   width: 800px;
+  margin: 0 auto;
   height: 800px;
+  /*left: calc(40vw - 32px);*/  /* сделат рядом еще 1 блок как с фото и не парить мозги */
   background-image: url("../img/dark-mode/hero-image.svg");
   background-repeat: no-repeat;
-}
+
+  }
 
 .hero-image::after {
   position: absolute;
@@ -247,7 +244,6 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 
 
 .intro .container div {
-  margin-left: 250px;
   margin-bottom: 56px;
 }
 
@@ -262,6 +258,7 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 .intro p {
   margin: 0 0 32px;
   z-index: 2;
+  text-align: justify;
 }
 
 .knowledge-list{
@@ -269,6 +266,7 @@ column-count: 3;
 }
 .knowledge-list li{
   font-weight: 600;
+  padding: 5px;
 }
 
 /* section about my skills with bars */
@@ -341,8 +339,7 @@ column-count: 3;
 
 .portfolio .container {
   text-align: center;
-  padding: 0 0 56px 250px;  /* ставится для центрирования контейнера Мои работы, что бы он не прилипал к левому краю */
- }
+  }
 
 .button {
   margin: 0;

@@ -24,5 +24,5 @@ function onClickButtonFour(el){
 }
 
 function onClickButtonSummAll(el){
-  el.value = Number(document.getElementById('answerOne').value) + Number(document.getElementById('answerTwo').value) + Number(document.getElementById('answerThree').value) + Number(document.getElementById('answerFour').value);
+  el.value = Number(document.getElementById('answerOne').value) + Number(document.getElementById('answerTwo').value) + Number(document.getElementById('answerThree').value) + Number(document.getElementById('answerFour').value) + Number(document.getElementById('internet').value);
 }

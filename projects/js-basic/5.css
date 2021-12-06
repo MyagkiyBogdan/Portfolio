@@ -2,13 +2,78 @@ body{
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   font-size: 18px;
-  padding: 10px 0 0 0;
   background-color: #5bcc7d;
-  padding-bottom: 30px;
-  max-width: 1408px;
   margin: 0 auto;
   padding: 0 auto;
   }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    }
+
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1260px;
+  padding: 0;
+  margin: 0 auto;
+  border: 5px black dashed;
+  /* width: calc(25% - 30px);  для адаптива без @media */
+  }
+
+.section:last-child{
+  border: none;
+  min-width: 300px;
+}
+
+
+.sectionSumm {
+  margin-top: 25px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  min-width: 1020px;
+  }
+
+@media (max-width:1300px){
+  .sectionSumm {
+    min-width: 970px;
+  }
+}
+
+@media (max-width:992px){
+  .sectionSumm {
+    min-width: 728px;
+  }
+}
+
+@media (max-width:767px){
+  .sectionSumm {
+    min-width: 0;
+  }
+}
+
+/* first block media */
+  @media (max-width: 1300px) {
+    .section {
+      max-width: 970px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .section {
+      max-width: 750px;
+    }
+  }
+  @media (max-width: 767px) {
+    .section {
+      max-width: none;
+    }
+  }
+
 
 .count {
   text-align: center;
@@ -20,30 +85,23 @@ font-style: italic;
 margin-bottom: auto;
 }
 
+.submitComun{
+  margin: 0 auto;
+  padding: 0 20px;
+  }
 
-.submitComun:last-child{
-  border-right: none;
-}
-
-.container {
- padding: 0 3px 0 3px;
-  text-align: center;
-  margin-top: 300px;
-}
 
 .inputBlock {
   padding: 8px;
   font-family: inherit;
-  width: 200px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .inputBlockSubmAll{
   text-align: center;
-  font-size: 18px;
   font-weight: 700;
-}
+  }
 
 .inputName {
   display: flex;
@@ -54,18 +112,8 @@ margin-bottom: auto;
   font-weight: 700;
 }
 
-.section {
-  display: flex;
-  justify-content: space-evenly;
-  border: 5px black dashed;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-.section:last-child{
-border: none;
-padding-top: 50px;
-
+.inputNameLast{
+  font-size: 28px;
 }
 
 .buttonSubmit {
@@ -76,7 +124,7 @@ padding-top: 50px;
   outline: none;
   box-sizing: border-box;
   font-family: sans-serif;
-  margin-left: 40px; /* Планы: посчитать правильно margin через calc*/
+  margin: 0 auto; /* Планы: посчитать правильно margin через calc*/
   line-height: 2;
   font-size: 16px;
   font-weight: 700;
@@ -84,30 +132,22 @@ padding-top: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
   transition: background-color 100ms, box-shadow 100ms;
+  display: block;
 }
 
 .buttonSubmit:hover { background: rgb(232,95,76); }
 .buttonSubmit:active { background: rgb(152,15,0); }
 
-.sectionSumm {
-  margin-top: 25px;
-  padding-bottom: 20px;
-  justify-content: center;
-}
 
-.inputNameLast {
- padding-top: 20px;
-}
 
 .buttonBack {
-  margin: 10px auto;
+  margin: 35px auto;
   padding: 6px 20px;
   letter-spacing: 1px;
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 24px;
-
   }
 
 .buttonSubmit:focus,
