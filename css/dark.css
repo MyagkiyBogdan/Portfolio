@@ -123,7 +123,7 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 
 .hero-image {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 180px 0;
   height: 798px;
   background-image: url("../img/dark-mode/bg-html.png");
   background-repeat: no-repeat;
@@ -169,18 +169,53 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 }
 
 .hero-image-back {
-
-  position: absolute;
+  /* border: 10px red solid; */
+  /* position: absolute; */
   content: "";
   top: 24px;
   width: 800px;
-  margin: 0 auto;
+  margin: -25px auto 0;
   height: 800px;
-  right: 100px;
   background-image: url("../img/dark-mode/hero-image.svg");
   background-repeat: no-repeat;
+  margin-bottom: 80px;
+  }
+
+.flex-hero {
+ /* border: chocolate 15px double; */
+  display: flex;
+  max-width: 100%;
+  }
+
+  .flex-hero-left {
+    /* border: #21aa4f 15px solid; */
+    max-width: 45%;
+  z-index: 2;
+  order: 1;
+     }
+
+.flex-hero-right {
+  /* border: #f9e7a8 15px solid; */
+  max-width: 100%;
+  z-index: 2;
+  order: 1;
+
+  }
+
+
+
+@media (max-width:1200px) {
+  .container-adaptive {
+      padding-left: 220px;
+  }
 }
 
+@media (max-width:1200px) {
+  .hero-image-back{
+      display:none;
+  }
+
+}
 /*.hero-image::after {
   position: absolute;
   content: "";
@@ -197,8 +232,6 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
 } */
 
   .heading {
-    z-index: 1;
-    order: 2;
     margin: 0 0 0 -10px;
     padding: 10px 0px;
     width: 815px;
@@ -212,9 +245,8 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
     font-family: "Times New Roman", Times, serif;
     }
 
-  .hero-image p {
-    z-index: 1;
-    order: 1;
+ /* .hero-image p */
+   .heading-under {
     margin: 0;
     padding: 32px 0;
     padding-bottom: 16px;
@@ -222,7 +254,6 @@ background-image: url("../img/dark-mode/linkedin-alt.svg");
     line-height: 48px;
     color: #f9dd79;
     font-weight: 600;
-
   }
 
   .user-image {
